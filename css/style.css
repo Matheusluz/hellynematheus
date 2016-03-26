@@ -37,6 +37,14 @@ body{
 .logo{
 	float:left;
 	margin: 19px 0px 0px 0px;
+	font-family: 'Cookie', cursive;
+	display: block;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	color: #ff8500;
+	font-size: 3em;
 }
 .top-nav{
 	float:right;
