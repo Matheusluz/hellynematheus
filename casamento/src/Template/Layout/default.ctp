@@ -13,7 +13,7 @@
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
 
-$cakeDescription = 'CakePHP: the rapid development php framework';
+$cakeDescription = 'Hellyn e Matheus';
 ?>
 <!DOCTYPE html>
 <html>
@@ -26,14 +26,36 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
     </title>
     <?= $this->Html->meta('icon') ?>
 
-    <?= $this->Html->css('base.css') ?>
-    <?= $this->Html->css('cake.css') ?>
+    <?= $this->Html->css(['responsiveslides', 'lightbox', 'style']) ?>
+    <?= $this->Html->css('http://fonts.googleapis.com/css?family=Cookie') ?>
+    
+    <?= $this->Html->script(['jquery-1.12.3.min', 'jquery.lightbox', 'responsiveslides.min']) ?>
 
     <?= $this->fetch('meta') ?>
     <?= $this->fetch('css') ?>
     <?= $this->fetch('script') ?>
 </head>
 <body>
+    <!---start-header---->
+	<div class="header" id="top">
+		<div class="wrap">
+		<!---start-logo---->
+		<div class="logo">
+		    <?= $this->Html->link('Hellyn & Matheus', '/pages/home') ?>
+		</div>
+		<!---End-logo---->
+		<!---start-top-nav---->
+		<div class="top-nav">
+			<ul>
+				<li><?= $this->Html->link('Lista de presentes', '/pages/home') ?></li>
+				<li><?= $this->Html->link('Galeria', '/pages/gallery') ?></li>
+				<li><?= $this->Html->link('Confirmar presença', '/pages/contact') ?></li>
+			</ul>
+		</div>
+		<div class="clear"> </div>
+		<!---End-top-nav---->
+	</div>
+	<!---End-header---->
     <nav class="top-bar expanded" data-topbar role="navigation">
         <ul class="title-area large-3 medium-4 columns">
             <li class="name">
