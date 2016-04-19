@@ -224,13 +224,18 @@ body{
 	color: #000000;
 }
 .center-box ul li:before{
-	content:url(../images/marker.png);
+	content:url(../img/marker.png);
 	padding: 10px;
 }
 .center-box ul{
 	margin-top:30px;
 }
 /*---footer----*/
+.footer{
+	position: absolute;
+	bottom: 48px;
+	width: 100%;
+}
 .footer-right{
 	float:right;
 }
@@ -279,7 +284,7 @@ body{
 	color:#ff8500;
 }
 .footer-right ul li:before{
-	content:url(../images/marker1.gif);
+	content:url(../img/marker1.gif);
 	padding: 10px;
 }
 /*---top-link----*/
@@ -288,6 +293,9 @@ body{
 	background: rgba(227, 227, 225, 0.44);
 	padding:10px 0;
 	margin-top:31px;
+	position:absolute;
+	bottom: 5px;
+	width: 100%;
 }
 .top-link a{
 	font-family: 'Cookie', cursive;
@@ -299,10 +307,10 @@ body{
 	-o-transition: all 0.3s ease-out;
 	transition: all 0.3s ease-out;
 	padding: 10px 23px 15px 24px;
-	background:url(../images/arrow_up.png);
+	background:url(../img/arrow_up.png);
 }
 .top-link a:hover{
-	background:url(../images/arrow_up1.png);
+	background:url(../img/arrow_up1.png);
 }
 /*----start-about-----*/
 .about-grid{
@@ -457,7 +465,7 @@ body{
 }
 .services-sidebar ul li {
 	border-bottom: 1px dashed rgba(192, 192, 192, 0.33);
-	background: url(../images/marker.png) 0 15px no-repeat;
+	background: url(../img/marker.png) 0 15px no-repeat;
 	padding: 9px 13px 8px 23px;
 }
 .services {
