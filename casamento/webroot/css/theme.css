@@ -156,7 +156,7 @@ img {max-width: 100%;}
 }
 /*---------------------------------------------------- 	Intro------------------------------------------------------*/
 header {
-	padding-bottom:50px;
+	padding-bottom: 63px;
 }
 .intro {
 	font-family:'Playball',cursive;
@@ -167,19 +167,22 @@ header {
 }
 /*---------------------------------------------------- 	Parallax------------------------------------------------------*/
 .parallax {
-	text-align: center;
+	/*text-align: center;*/
 	background-position: center bottom;
 	background-repeat:no-repeat;
 	background-size: cover;
 	background-attachment: fixed !important;
 	overflow: hidden;
 	background-image: url(../img/9.jpg);
-	height: 580px;
 }
 .parallax-pattern-overlay {
 	background-image:url(../img/pattern.png);
 	background-repeat: repeat;
+}
+.parallax .container-fluid{
 	height: 580px;
+    padding-top: 115px;
+    margin-right: 10px;
 }
 /*---------------------------------------------------- 	Heading------------------------------------------------------*/
 .heading {
@@ -205,7 +208,7 @@ header {
 	line-height:1.7;
 }
 img#site-title {
-	max-width: 150px;
+	max-width: 320px;
 }
 /*---------------------------------------------------- 	Team------------------------------------------------------*/
 .papers,.papers:before,.papers:after {
