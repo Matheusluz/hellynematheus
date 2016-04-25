@@ -17,7 +17,7 @@
     <?= $this->Html->css('https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic') ?>
     <?= $this->Html->css('https://fonts.googleapis.com/css?family=Playball') ?>
 
-    <?= $this->Html->script(['jquery', 'bootstrap.min', 'parallax', 'wow', 'common']) ?>
+    <?= $this->Html->script(['jquery-2.2.3.min', 'bootstrap.min', 'parallax', 'wow', 'common', 'jquery.countdown.min']) ?>
 
     <?= $this->fetch('meta') ?>
     <?= $this->fetch('css') ?>
@@ -25,7 +25,6 @@
 </head>
 
 <body>
-        
     <div class="wrapper" id="wrapper">
         <header>
             <div class="menu">
