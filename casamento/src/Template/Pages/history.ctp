@@ -1,0 +1,1 @@
+<div class="wow fadeInUp underline title" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">Nossa história</div>

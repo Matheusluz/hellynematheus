@@ -27,7 +27,6 @@ img {max-width: 100%;}
 /*--------------------------- Menu ------------------------------------*/
 .navbar {
 	border-bottom: 3px solid #ff8500;
-	padding: 5px 0;
 	margin-bottom: 0;
 }
 .navbar-header {
@@ -156,7 +155,7 @@ img {max-width: 100%;}
 }
 /*--------------------------- Intro ------------------------------------*/
 header {
-	padding-bottom: 63px;
+	padding-bottom: 53px;
 }
 .intro {
 	font-family: 'Playball',cursive;
@@ -168,7 +167,7 @@ header {
 /*--------------------------- Parallax ------------------------------------*/
 .parallax {
 	/*text-align: center;*/
-	background-position: center bottom;
+	background-position: bottom;
 	background-repeat:no-repeat;
 	background-size: cover;
 	background-attachment: fixed !important;
@@ -176,11 +175,12 @@ header {
 	background-image: url(../img/9.jpg);
 }
 .parallax-pattern-overlay {
-	background-image:url(../img/pattern.png);
-	background-repeat: repeat;
+	/*background-image:url(../img/pattern.png);*/
+	/*background-repeat: repeat;*/
+	background: rgba(0,0,0,0.35);
 }
 .parallax .texts{
-	height: 580px;
+	/*height: 580px;*/
     padding-top: 115px;
     margin-right: 10px;
 }
@@ -212,6 +212,40 @@ header {
 }
 img#monogram {
 	max-width: 320px;
+}
+.zigzag-inside:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background-image: url("data:image/svg+xml,%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%228px%22%20height%3D%224px%22%3E%3Cpolygon%20points%3D%220%2C4%204%2C0%208%2C4%22%20fill%3D%22%23FFFFFF%22%2F%3E%3C%2Fsvg%3E");
+}
+
+.wave::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-repeat: repeat;
+  height: 10px;
+  background-size: 20px 20px;
+  background-image:
+    radial-gradient(circle at 10px -5px, transparent 12px, white 13px);
+}
+.wave::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-repeat: repeat;
+  height: 15px;
+  background-size: 40px 20px;
+  background-image:
+    radial-gradient(circle at 10px 15px, white 12px, transparent 13px);
 }
 /*--------------------------- Team ------------------------------------*/
 .papers,.papers:before,.papers:after {
@@ -607,50 +641,13 @@ textarea.contact {
 	position:relative;
 }
 .footer .container {
-	padding:60px 0 20px;
-}
-.footer ul {
-	margin:0 auto;
-	margin-bottom:30px;
-	margin-top:10px;
-	text-align:center;
-	list-style-type:none;
-	padding-left:0;
-}
-.footer ul li {
-	display:inline-block;
-	text-align:center;
-	background:rgba(0,0,0,0.2);
-	color:#ffffff;
-	line-height:45px;
-	margin:0 4px 0px;
-	width:45px !important;
-	height:45px !important;
-		-webkit-border-radius:3px;
-	border-radius:3px;
-}
-.footer ul li:hover {
-	background:#2a2a2a;
-}
-.footer ul li:hover	a {
+	padding:45px 0 20px;
 	color:#fff;
-}
-.footer ul li a {
-	color:#fff;
-	width:42px !important;
-	height:42px !important;
-}
-.footer ul li a i {
-	line-height:45px;
-	color:#fff;
-}
-.footer p {
-	color:#fff;
-	font-size:13px;
-	line-height:24px;
+	font-size:35px;
+	line-height:30px;
 	font-weight:300;
 	text-align:center;
-	text-transform:uppercase;
+	font-family: 'Playball',cursive;
 }
 .gototop {
 	display:inline-block;
@@ -696,4 +693,32 @@ blockquote cite {
 }
 blockquote cite:before {
 	content: "\2014 \2009";
+}
+
+
+/*--------------------------- 9. Title Style ------------------------------------*/
+.title {
+    font-family: 'Great Vibes', cursive;
+    font-size: 48px;
+    line-height:1.1;
+	font-weight:500;
+    color: #333;
+    text-align: center;
+    padding-top: 50px;
+}
+.underline {
+    border-bottom: 1px solid #efefef;
+    padding-bottom: 15px;
+    position: relative;
+}
+.underline:after {
+    content: "";
+    height: 3px;
+    position: absolute;
+    width: 100px;
+    background: #cc580c;
+    margin: 0 auto;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
 }
