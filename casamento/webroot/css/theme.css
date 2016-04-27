@@ -63,6 +63,10 @@ img {max-width: 100%;}
 	 right:0px;
 	 bottom:0;
 }
+.menu .container-fluid {
+	padding-right: 60px;
+    padding-left: 60px;
+}
 .navArea {
 	float:right;
 }
