@@ -10,10 +10,9 @@ body {
 .playball {
 	font-family:'Playball',cursive;
 }
-h1,h2,h3,h4,h5,h6 {
-	color:#333;
-	line-height:1.4;
-	font-weight:700;
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    margin: 0 0 15px;
 }
 .w960 {
 	max-width:960px;
@@ -162,11 +161,14 @@ header {
 	padding-bottom: 53px;
 }
 .intro {
-	font-family: 'Playball',cursive;
-	font-size: 30px;
+	font-family: 'Great Vibes',cursive;
+	font-size: 45px;
 	line-height: 1.0;
 	font-weight: 900;
 	color: #fff;
+}
+.intro .texts2 {
+	font-size: 30px;
 }
 /*--------------------------- Parallax ------------------------------------*/
 .parallax {
@@ -201,7 +203,7 @@ header {
 }
 .heading h2 {
 	font-weight:700;
-	font-family:'Playball',cursive;
+	font-family:'Great Vibes',cursive;
 	font-size:35px;
 	color:#333;
 	margin:0;
@@ -651,7 +653,7 @@ textarea.contact {
 	line-height:30px;
 	font-weight:300;
 	text-align:center;
-	font-family: 'Playball',cursive;
+	font-family: 'Great Vibes',cursive;
 }
 .gototop {
 	display:inline-block;
@@ -702,27 +704,43 @@ blockquote cite:before {
 
 /*--------------------------- 9. Title Style ------------------------------------*/
 .title {
-    font-family: 'Great Vibes', cursive;
-    font-size: 48px;
-    line-height:1.1;
-	font-weight:500;
-    color: #333;
+    padding: 40px 26%;
+    position: relative; 
     text-align: center;
-    padding-top: 50px;
+    z-index: 2;
 }
-.underline {
-    border-bottom: 1px solid #efefef;
-    padding-bottom: 15px;
-    position: relative;
+.title img {
+	margin: auto;
 }
-.underline:after {
+
+.title h2 {
+    margin-top: 15px;
+    margin-bottom: 0;
+    color: #333333;
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.000em;
+}
+
+.title h2:after {
+    background-color: #cc580c;
     content: "";
-    height: 3px;
-    position: absolute;
-    width: 100px;
-    background: #cc580c;
-    margin: 0 auto;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
+    height: 2px;
+    width: 50px;
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+}
+.our-story {
+    margin-bottom: 30px;
+    margin-top: 0;
+}
+
+.ih-item.circle.effect17 .info h4 {
+  color: #fff;
+  position: relative;
+  letter-spacing: 2px;
+  margin: 0 30px;
+  padding: 55px 0 0 0;
+  height: 110px;
+  text-shadow: 0 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.3);
 }

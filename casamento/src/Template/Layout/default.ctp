@@ -11,7 +11,7 @@
     </title>
     <?= $this->Html->meta('icon') ?>
 
-    <?= $this->Html->css(['bootstrap', 'font-awesome', 'responsiveslides', 'animate', 'theme']) ?>
+    <?= $this->Html->css(['bootstrap', 'font-awesome', 'responsiveslides', 'animate', 'ihover', 'theme']) ?>
     <?= $this->Html->css('https://fonts.googleapis.com/css?family=Cookie') ?>
     <?= $this->Html->css('https://fonts.googleapis.com/css?family=Montserrat:400,700') ?>
     <?= $this->Html->css('https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic') ?>
