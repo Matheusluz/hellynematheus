@@ -63,7 +63,6 @@ class PagesController extends AppController
         }
     }
     
-    public function history() {
-        // $this->layout = "ajax";
-    }
+    public function history() {}
+    public function ceremony() {}
 }

@@ -19,7 +19,9 @@
 	</div>
 </div>
 
-<?= $this->render('history', 'ajax'); ?>
+<?= $this->element('../Pages/history'); ?>
+<?= $this->element('../Pages/ceremony'); ?>
+
 
 
 <script type="text/javascript">

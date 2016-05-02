@@ -1,7 +1,7 @@
 <section class="history" id="history">
     <div class="container">
         <div class="wow <fadeInUp></fadeInUp> title" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
-            <?= $this->Html->image("icons/wedding-ceremony-secon-icon.png", ["class" => "img-responsive pull-center"]) ?>
+            <?= $this->Html->image("icons/couple-parents-icon.png", ["class" => "img-responsive pull-center"]) ?>
             <h2>Nossa história</h2>
         </div>
         <div class="row">
