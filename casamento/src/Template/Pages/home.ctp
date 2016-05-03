@@ -20,6 +20,7 @@
 </div>
 
 <?= $this->element('../Pages/history'); ?>
+<?= $this->element('../Pages/slider'); ?>
 <?= $this->element('../Pages/ceremony'); ?>
 
 
