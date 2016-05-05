@@ -9,16 +9,37 @@
 		        </div>
 		        <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 1300px; height: 500px; overflow: hidden;">
 		            <div data-p="225.00" style="display: none;">
-		            	<?= $this->Html->image("slider/1.jpg", ["data-u" => "image"]) ?>
+		            	<?= $this->Html->image("slider/Foz.jpg", ["data-u" => "image"]) ?>
 		            </div>
 		            <div data-p="225.00" style="display: none;">
-		            	<?= $this->Html->image("slider/4.jpg", ["data-u" => "image"]) ?>
+		            	<?= $this->Html->image("slider/praia.jpg", ["data-u" => "image"]) ?>
+		            </div>
+		            <div data-p="225.00" style="display: none;">
+		            	<?= $this->Html->image("slider/2.jpg", ["data-u" => "image"]) ?>
 		            </div>
 		            <div data-p="225.00" style="display: none;">
 		            	<?= $this->Html->image("slider/6.jpg", ["data-u" => "image"]) ?>
 		            </div>
 		            <div data-p="225.00" style="display: none;">
-		            	<?= $this->Html->image("slider/14.jpg", ["data-u" => "image"]) ?>
+		            	<?= $this->Html->image("slider/4.jpg", ["data-u" => "image"]) ?>
+		            </div>
+		            <div data-p="225.00" style="display: none;">
+		            	<?= $this->Html->image("slider/3.jpg", ["data-u" => "image"]) ?>
+		            </div>
+		            <div data-p="225.00" style="display: none;">
+		            	<?= $this->Html->image("slider/7.jpg", ["data-u" => "image"]) ?>
+		            </div>
+		            <div data-p="225.00" style="display: none;">
+		            	<?= $this->Html->image("slider/8.jpg", ["data-u" => "image"]) ?>
+		            </div>
+		            <div data-p="225.00" style="display: none;">
+		            	<?= $this->Html->image("slider/11.jpg", ["data-u" => "image"]) ?>
+		            </div>
+		            <div data-p="225.00" style="display: none;">
+		            	<?= $this->Html->image("slider/10.jpg", ["data-u" => "image"]) ?>
+		            </div>
+		            <div data-p="225.00" style="display: none;">
+		            	<?= $this->Html->image("slider/formatura.jpg", ["data-u" => "image"]) ?>
 		            </div>
 		        
 		        </div>
