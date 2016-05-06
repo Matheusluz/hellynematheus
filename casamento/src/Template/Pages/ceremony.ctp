@@ -1,6 +1,6 @@
 <section class="ceremony" id="ceremony">
     <div class="container">
-        <div class="wow <fadeInUp></fadeInUp> title" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+        <div class="wow title" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
             <?= $this->Html->image("icons/wedding-ceremony-secon-icon.png", ["class" => "img-responsive pull-center"]) ?>
             <h2>Cerimônia e Recepção</h2>
         </div>

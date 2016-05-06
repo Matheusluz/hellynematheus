@@ -11,7 +11,7 @@
     </title>
     <?= $this->Html->meta('icon') ?>
 
-    <?= $this->Html->css(['bootstrap', 'animate', 'ihover', 'theme']) ?>
+    <?= $this->Html->css(['bootstrap', 'animate', 'ihover', 'lightbox', 'theme']) ?>
     <?= $this->Html->css('https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css') ?>
     <?= $this->Html->css('https://fonts.googleapis.com/css?family=Cookie') ?>
     <?= $this->Html->css('https://fonts.googleapis.com/css?family=Montserrat:400,700') ?>
@@ -19,7 +19,10 @@
     <?= $this->Html->css('https://fonts.googleapis.com/css?family=Playball') ?>
     <?= $this->Html->css('https://fonts.googleapis.com/css?family=Great+Vibes') ?>
 
-    <?= $this->Html->script(['jquery-2.2.3.min', 'bootstrap.min', 'parallax', 'wow', 'jquery.countdown.min', 'jquery.firefly-0.5-min', 'common']) ?>
+    <?= $this->Html->script(['jquery-2.2.3.min', 'bootstrap.min', 'parallax', 'wow', 'jquery.countdown.min', 'jquery.firefly-0.5-min']) ?>
+    <!--Galeria-->
+    <?= $this->Html->script(['lightbox', 'masonry.pkgd.min', 'imagesloaded.pkgd.min']) ?>
+    <?= $this->Html->script('common') ?>
     
     <?= $this->fetch('meta') ?>
     <?= $this->fetch('css') ?>
