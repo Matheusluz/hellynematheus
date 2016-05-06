@@ -11,19 +11,16 @@
     </title>
     <?= $this->Html->meta('icon') ?>
 
-    <?= $this->Html->css(['bootstrap', 'font-awesome', 'responsiveslides', 'animate', 'ihover', 'theme']) ?>
-    <?= $this->Html->css(['supersized', 'supersized.shutter']) ?>
-    
+    <?= $this->Html->css(['bootstrap', 'animate', 'ihover', 'theme']) ?>
+    <?= $this->Html->css('https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css') ?>
     <?= $this->Html->css('https://fonts.googleapis.com/css?family=Cookie') ?>
     <?= $this->Html->css('https://fonts.googleapis.com/css?family=Montserrat:400,700') ?>
     <?= $this->Html->css('https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic') ?>
     <?= $this->Html->css('https://fonts.googleapis.com/css?family=Playball') ?>
     <?= $this->Html->css('https://fonts.googleapis.com/css?family=Great+Vibes') ?>
 
-    <?= $this->Html->script(['jquery-2.2.3.min', 'bootstrap.min', 'parallax', 'wow', 'common', 'jquery.countdown.min', 'jquery.firefly-0.5-min', 'jssor.slider.mini']) ?>
+    <?= $this->Html->script(['jquery-2.2.3.min', 'bootstrap.min', 'parallax', 'wow', 'jquery.countdown.min', 'jquery.firefly-0.5-min', 'common']) ?>
     
-    <?= $this->Html->script(['jquery.easing.min', 'supersized.3.2.7', 'supersized.shutter']) ?>
-
     <?= $this->fetch('meta') ?>
     <?= $this->fetch('css') ?>
     <?= $this->fetch('script') ?>
