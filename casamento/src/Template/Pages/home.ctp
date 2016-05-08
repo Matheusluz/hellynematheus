@@ -23,8 +23,6 @@
 <?= $this->element('../Pages/gallery'); ?>
 <?= $this->element('../Pages/ceremony'); ?>
 
-
-
 <script type="text/javascript">
 	// Inicia contagem regressiva da home
 	$('.clock').countdown('2016/07/23 17:00:00').on('update.countdown', function(event) {

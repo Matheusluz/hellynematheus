@@ -428,29 +428,14 @@ blockquote cite:before {
 #gallery .container-fluid {
     margin: 20px 0;
 }
-#gallery .grid-item-content img {
-    border-radius: 10px;
+#gallery .thumbnail {
+	margin-bottom: 0;	
 }
-#gallery .grid-item-content:hover {
-    border-radius: 10px;
-    border-color: rgba(150,150,150,1);
-  	box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1), 0 4px 8px 0 rgba(0,0,0,0.2);
-  	cursor: pointer;
+a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
+    border-color: #cc580c;
 }
-#gallery .grid-item-content {
-	background: #cc580c;
-    border-radius: 10px;
+#gallery .grid-item.col-xs-3 {
+    padding: 2.5px;
 }
-#gallery .grid-item-content img {
-	opacity: 1;
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
-}
-#gallery .grid-item-content:hover img {
-	opacity: .5;
-}
-/* fluid 5 columns */
-/*.grid-sizer,*/
-/*.grid-item { width: 20%; }*/
-/* 2 columns */
-/*.grid-item--width2 { width: 40%; }*/
+
+/*--------------------------- Confirmar presença ----------------------------*/

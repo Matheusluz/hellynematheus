@@ -7,19 +7,21 @@
         <div class="container-fluid">
             <div class="grid">
                 <div class="grid-sizer col-xs-3"></div>
-                    <!-- items use Bootstrap .col- classes -->
-                <div class="grid-item col-xs-3">
-                    <!-- wrap item content in its own element -->
-                    <div class="grid-item-content">
-                        <?= $this->Html->link($this->Html->image("gallery/2.jpg", ['class' => 'class_img']), "/img/gallery/2.jpg", ['escapeTitle' => false, 'title' => "/img/gallery/2.jpg", 'data-lightbox'=> 'roadtrip', 'class' => 'class_url']) ?>
-                    </div>
-                </div>
-                <div class="grid-item col-xs-4">
-                    <div class="grid-item-content">
-                        
-                    <?= $this->Html->link($this->Html->image("gallery/3.jpg", ['class' => 'class_img']), "/img/gallery/3.jpg", ['escapeTitle' => false, 'title' => "/img/gallery/3.jpg", 'data-lightbox'=> 'roadtrip', 'class' => 'class_url']) ?>
-                    </div>
-                </div>
+                <?php
+                    $files = glob('img/gallery/*.{jpg,png,gif}', GLOB_BRACE);
+                    foreach($files as $file) {
+                    ?>
+                        <div class="grid-item col-xs-3">
+                            <div class="grid-item-content">
+                                <a class="thumbnail fancybox-thumb" rel="fancybox-thumb" href="<?= $file ?>">
+                                    <img src="<?= $file ?>" alt="" />
+                                </a>
+                            </div>
+                        </div>
+                    
+                    <?php
+                    }
+                ?>
             </div>
         </div>
     </div>
