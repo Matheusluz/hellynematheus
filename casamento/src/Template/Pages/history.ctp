@@ -6,7 +6,12 @@
         </div>
         <div class="row">
             <div class="col-sm-12 ">
-                <p class="text-center our-story">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p class="text-center our-story">
+                    Nos conhecemos em 2006, no hospital do trabalhador, onde ambos trabalhavam. Porém a história começou mesmo em março de 2007, onde Matheus, muito cavalheiro, e nada interesseiro, começou a levar a Hellyn para casa, pois ela trabalhava até muito tarde, (que bonzinho não?!), de repente um dia a moto estragou (ohhhhhhhh), ele desceu da moto para “arrumá-la” e então... Aconteceu o primeiro beijo, na moto (que lindo!) Depois disso, fomos “ficando” até acontecer o pedido de namoro, levar nas casas para conhecer as famílias e por aí foi. Um bom tempo depois aconteceu o que muita gente achava que não iria acontecer (o povo achava tão impossível, que até planinhos para o pedido tinham feito kkkk), o pedido de casamento foi feito! (Eeeeee)
+                </p>
+                <p class="text-center our-story">
+                    E assim foi, por 9 anos, fomos construindo nossa linda história, cheia de alegria e alguns tropeços, mas que sempre superamos juntos. Assim vamos escrever mais algumas páginas de nosso futuro, que esperamos ser tão felizes quanto foram nesse tempo!
+                </p>
             </div>
         </div>
         <div class="row">
