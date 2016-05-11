@@ -60,11 +60,10 @@ class ConfirmsTable extends Table
         $validator
             ->requirePresence('message', 'create')
             ->notEmpty('message');
-
+            
         $validator
-            ->boolean('send_message')
-            ->requirePresence('send_message', 'create')
-            ->notEmpty('send_message');
+            ->requirePresence('quantidy', 'create')
+            ->notEmpty('quantidy');
 
         return $validator;
     }

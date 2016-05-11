@@ -1,5 +1,7 @@
 jQuery(document).ready(function() {
-	
+    // Máscaras
+    $(".phone").mask("(99) 9999-9999?9");
+    	
     // Script Wow Animation
     new WOW().init();
 	
@@ -26,13 +28,4 @@ jQuery(document).ready(function() {
 			}
 		}
 	});
-// 	$(".fancybox-button").fancybox({
-// 		prevEffect		: 'none',
-// 		nextEffect		: 'none',
-// 		closeBtn		: false,
-// 		helpers		: {
-// 			title	: { type : 'inside' },
-// 			buttons	: {}
-// 		}
-// 	});
 });

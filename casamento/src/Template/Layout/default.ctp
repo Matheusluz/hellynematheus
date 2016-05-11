@@ -21,7 +21,7 @@
     <?= $this->Html->css('https://fonts.googleapis.com/css?family=Playball') ?>
     <?= $this->Html->css('https://fonts.googleapis.com/css?family=Great+Vibes') ?>
 
-    <?= $this->Html->script(['jquery-2.2.3.min', 'bootstrap.min', 'parallax', 'wow', 'jquery.countdown.min', 'jquery.firefly-0.5-min']) ?>
+    <?= $this->Html->script(['jquery-2.2.3.min', 'jquery.maskedinput.min', 'bootstrap.min', 'parallax', 'wow', 'jquery.countdown.min', 'jquery.firefly-0.5-min']) ?>
     <!--Galeria-->
     <?= $this->Html->script(['masonry.pkgd.min', 'imagesloaded.pkgd.min']) ?>
     <?= $this->Html->script(['jquery.fancybox.pack', 'jquery.fancybox-buttons', 'jquery.fancybox-thumbs']) ?>

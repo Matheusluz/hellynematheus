@@ -51,6 +51,7 @@ class ConfirmsController extends AppController
         $confirm = $this->Confirms->newEntity();
         if ($this->request->is('post')) {
             $confirm = $this->Confirms->patchEntity($confirm, $this->request->data);
+        pr($confirm);
             if ($this->Confirms->save($confirm)) {
                 $this->Flash->success(__('The confirm has been saved.'));
                 return $this->redirect(['action' => 'index']);

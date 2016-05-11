@@ -439,3 +439,6 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
 }
 
 /*--------------------------- Confirmar presença ----------------------------*/
+#confirms .row {
+    padding: 20px 0;
+}

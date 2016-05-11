@@ -22,6 +22,7 @@
 <?= $this->element('../Pages/history'); ?>
 <?= $this->element('../Pages/gallery'); ?>
 <?= $this->element('../Pages/ceremony'); ?>
+<?= $this->element('../Confirms/add'); ?>
 
 <script type="text/javascript">
 	// Inicia contagem regressiva da home
