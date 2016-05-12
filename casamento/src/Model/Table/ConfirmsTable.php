@@ -44,25 +44,23 @@ class ConfirmsTable extends Table
             ->allowEmpty('id', 'create');
 
         $validator
-            ->requirePresence('name', 'create')
+            ->requirePresence('name')
             ->notEmpty('name');
 
         $validator
             ->integer('phone')
-            ->requirePresence('phone', 'create')
-            ->notEmpty('phone');
+            ->allowEmpty('phone');
 
         $validator
             ->email('email')
-            ->requirePresence('email', 'create')
-            ->notEmpty('email');
+            ->allowEmpty('email');
 
         $validator
-            ->requirePresence('message', 'create')
-            ->notEmpty('message');
+            ->allowEmpty('message');
             
         $validator
-            ->requirePresence('quantidy', 'create')
+            ->integer('quantidy')
+            ->requirePresence('quantidy')
             ->notEmpty('quantidy');
 
         return $validator;

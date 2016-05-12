@@ -44,7 +44,7 @@ class MessagesTable extends Table
             ->allowEmpty('id', 'create');
 
         $validator
-            ->requirePresence('name', 'create')
+            ->requirePresence('name')
             ->notEmpty('name');
 
         $validator
@@ -52,7 +52,7 @@ class MessagesTable extends Table
             ->allowEmpty('email');
 
         $validator
-            ->requirePresence('message', 'create')
+            ->requirePresence('message')
             ->notEmpty('message');
 
         $validator
@@ -71,7 +71,7 @@ class MessagesTable extends Table
      */
     public function buildRules(RulesChecker $rules)
     {
-        $rules->add($rules->isUnique(['email']));
-        return $rules;
+        // $rules->add($rules->isUnique(['email']));
+        // return $rules;
     }
 }
