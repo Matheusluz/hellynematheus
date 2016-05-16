@@ -6,6 +6,7 @@ use Cake\ORM\Query;
 use Cake\ORM\RulesChecker;
 use Cake\ORM\Table;
 use Cake\Validation\Validator;
+use Cake\ORM\TableRegistry;
 
 /**
  * Confirms Model
@@ -13,7 +14,6 @@ use Cake\Validation\Validator;
  */
 class ConfirmsTable extends Table
 {
-
     /**
      * Initialize method
      *
@@ -29,6 +29,8 @@ class ConfirmsTable extends Table
         $this->primaryKey('id');
 
         $this->addBehavior('Timestamp');
+        
+        $this->hasOne('Messages', ['propertyName' => 'messages']);
     }
 
     /**
@@ -48,7 +50,7 @@ class ConfirmsTable extends Table
             ->notEmpty('name');
 
         $validator
-            ->integer('phone')
+            // ->integer('phone')
             ->allowEmpty('phone');
 
         $validator
@@ -66,16 +68,31 @@ class ConfirmsTable extends Table
         return $validator;
     }
 
-    /**
-     * Returns a rules checker object that will be used for validating
-     * application integrity.
-     *
-     * @param \Cake\ORM\RulesChecker $rules The rules object to be modified.
-     * @return \Cake\ORM\RulesChecker
-     */
-    public function buildRules(RulesChecker $rules)
-    {
-        $rules->add($rules->isUnique(['email']));
-        return $rules;
+    public function afterSave($event, $entity, $options) {
+        if ($entity->isNew()) {
+            if($entity->get('message') != ""){
+                
+                
+                $messageTable = TableRegistry::get('Messages');
+
+                // $message = new Message([
+                //     'confirm_id' => $entity->get('id'),
+                //     'name' => $entity->get('name'),
+                //     'phone' => $entity->get('phone'),
+                //     'email' => $entity->get('email'),
+                //     'message' => $entity->get('message')
+                // ]);
+
+                $message = $messageTable->newEntity();
+                
+                $message->confirm_id = $entity->get('id');
+                $message->name = $entity->get('name');
+                $message->phone = $entity->get('phone');
+                $message->email = $entity->get('email');
+                $message->message = $entity->get('message');
+                
+                $messageTable->save($message);
+            }
+        }
     }
 }

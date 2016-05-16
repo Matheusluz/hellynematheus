@@ -50,13 +50,24 @@ class ConfirmsController extends AppController
     {
         $confirm = $this->Confirms->newEntity();
         if ($this->request->is('post')) {
+            
+            $this->request->data['phone'] = preg_replace("/[^0-9]/", "", $this->request->data['phone']);
             $confirm = $this->Confirms->patchEntity($confirm, $this->request->data);
-        pr($confirm);
+
             if ($this->Confirms->save($confirm)) {
-                $this->Flash->success(__('The confirm has been saved.'));
-                return $this->redirect(['action' => 'index']);
+                if($confirm['confirm'] == true){
+                    if($confirm['message'] == true){
+                        $message = "Obrigado por sua confirmação, em breve sua mensagem também aparecerá em nosso site.";
+                    }else{
+                        $message = "Obrigado por sua confirmação.";
+                    }
+                }else{
+                    $message = "Obrigado por nos avisar, é uma pena que você não possa ir.";
+                }
+                    
+                $this->Flash->success(__($message));
             } else {
-                $this->Flash->error(__('The confirm could not be saved. Please, try again.'));
+                $this->Flash->error(__('Erro ao salvar confirmação, por favor entre em contato conosco. Matheus: 8837-5297 ou Hellyn 8872-0687.'));
             }
         }
         $this->set(compact('confirm'));

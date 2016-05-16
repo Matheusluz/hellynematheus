@@ -5,7 +5,15 @@
     </div>
     <div class="row bg-circles">
         <div class="container">
-            <?= $this->Form->create(null,  ['url' => ['controller' => 'Confirms', 'action' => 'add']]) ?>
+            <?= $this->Form->create(null, ["id" => "confirm_form", "url" => ['controller' => 'Confirms', 'action' => 'add']]) ?>
+            <?php
+                echo $this->Form->checkbox('confirm', [
+                    'id' => 'checkbox_confirm',
+                    'label' => false,
+                    'class' => 'hidden',
+                    'checked' => true
+                ]);
+            ?>
             <div class="form-group col-xs-6">
                 <?php
                     echo $this->Form->input('name', [
@@ -23,7 +31,7 @@
                         'min' => 1,
                         'required' => true,
                         'label' => false,
-                        'placeholder' => '* N° de convidados que deseja confirmar',
+                        'placeholder' => '* Número de convidados que deseja confirmar',
                         'class' => 'form-control'
                     ]);
                 ?>
@@ -59,9 +67,34 @@
                 ?>
             </div>
             <div class="col-xs-12">
-                <?= $this->Form->button(__('Enviar'), ['class' => 'btn btn-default']) ?>
+                <?= $this->Form->button(__('Confirmar presença'), ['id' => 'confirm', 'class' => 'btn btn-success col-xs-4 col-md-offset-1']) ?>
+                <?= $this->Form->button(__('Não poderei ir'), ['id' => 'ausent', 'class' => 'btn btn-danger col-xs-4 col-md-offset-2']) ?>
             </div>
             <?= $this->Form->end() ?>
         </div>
     </div>
 </section>
+
+<script type="text/javascript">
+    // Se for clicado que não poderá ir, envia campo confirm como false
+    $('#ausent').click(function(){
+        $('#checkbox_confirm').prop( "checked", false );
+    });
+    // Se for clicado para confirmar, envia campo confirm como true
+    $('#confirm').click(function(){
+        $('#checkbox_confirm').prop( "checked", true );
+    });
+    
+    // Ao clicar no botão confirmar presença
+    $('#confirm_form').submit(function(event){
+        $.ajax({
+            url: "confirm/add",
+            method: "POST",
+            data: $('#confirm_form').serialize(),
+        });
+        
+        // Incluir no callback
+        // return false;
+        // event.preventDefault();
+    });
+</script>

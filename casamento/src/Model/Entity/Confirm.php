@@ -31,13 +31,4 @@ class Confirm extends Entity
         '*' => true,
         'id' => false,
     ];
-    
-    // protected function _setPhone($phone)
-    // {
-    //     return preg_replace("/[^0-9]/", "", $phone);
-    // }
-    // protected function _getPhone($phone)
-    // {
-    //     return "(" . substr($phone, 0, 2).") " . substr($phone, 2, 4) . "-" . substr($phone, 6);
-    // }
 }
