@@ -442,3 +442,14 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
 #confirms .row {
     padding: 20px 0;
 }
+#box-confirm {
+    vertical-align: middle;
+    margin-top: 15px;
+    border-radius: 4px;
+}
+#box-confirm.bg-success{
+    border: 1px solid #5CB85C;
+}
+#box-confirm.bg-danger{
+    border: 1px solid #D9534F;
+}

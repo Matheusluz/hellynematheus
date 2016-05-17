@@ -70,7 +70,12 @@
                 <?= $this->Form->button(__('Confirmar presença'), ['id' => 'confirm', 'class' => 'btn btn-success col-xs-4 col-md-offset-1']) ?>
                 <?= $this->Form->button(__('Não poderei ir'), ['id' => 'ausent', 'class' => 'btn btn-danger col-xs-4 col-md-offset-2']) ?>
             </div>
+            <div class="col-xs-12 hidden" id="box-confirm" onclick="this.classList.add('hidden')">
+                <div id="box-text" style="display: inline;"></div>
+                <button type="button" class="close" aria-label="Close" style="display: inline;"><span aria-hidden="true">&times;</span></button>
+            </div>
             <?= $this->Form->end() ?>
+            
         </div>
     </div>
 </section>
@@ -88,13 +93,22 @@
     // Ao clicar no botão confirmar presença
     $('#confirm_form').submit(function(event){
         $.ajax({
-            url: "confirm/add",
+            url: "confirms/add",
             method: "POST",
             data: $('#confirm_form').serialize(),
+            success: function(data){
+                $('#confirm_form')[0].reset();
+                $('#box-confirm').removeClass('bg-danger hidden');
+                $('#box-confirm').addClass('bg-success');
+                $('#box-confirm #box-text').html(data);
+			},
+			error: function(data){
+                $('#box-confirm').removeClass('bg-success hidden');
+                $('#box-confirm').addClass('bg-danger');
+                $('#box-confirm #box-text').html(data);  
+			}
         });
         
-        // Incluir no callback
-        // return false;
-        // event.preventDefault();
+        return false;
     });
 </script>

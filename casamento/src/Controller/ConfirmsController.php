@@ -70,8 +70,8 @@ class ConfirmsController extends AppController
                 $this->Flash->error(__('Erro ao salvar confirmação, por favor entre em contato conosco. Matheus: 8837-5297 ou Hellyn 8872-0687.'));
             }
         }
-        $this->set(compact('confirm'));
-        $this->set('_serialize', ['confirm']);
+        $this->autoRender = false;
+        echo $message;
     }
 
     /**
