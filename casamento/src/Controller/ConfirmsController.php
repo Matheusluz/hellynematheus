@@ -64,10 +64,8 @@ class ConfirmsController extends AppController
                 }else{
                     $message = "Obrigado por nos avisar, é uma pena que você não possa ir.";
                 }
-                    
-                $this->Flash->success(__($message));
             } else {
-                $this->Flash->error(__('Erro ao salvar confirmação, por favor entre em contato conosco. Matheus: 8837-5297 ou Hellyn 8872-0687.'));
+                $message = 'Erro ao salvar confirmação, por favor entre em contato conosco. Matheus: 8837-5297 ou Hellyn 8872-0687.';
             }
         }
         $this->autoRender = false;

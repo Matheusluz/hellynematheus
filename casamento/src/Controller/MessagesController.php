@@ -18,10 +18,7 @@ class MessagesController extends AppController
      */
     public function index()
     {
-        $messages = $this->paginate($this->Messages);
-
-        $this->set(compact('messages'));
-        $this->set('_serialize', ['messages']);
+        $this->set('messages', $this->Messages->find());
     }
 
     /**
@@ -50,16 +47,18 @@ class MessagesController extends AppController
     {
         $message = $this->Messages->newEntity();
         if ($this->request->is('post')) {
+            
+            $this->request->data['phone'] = preg_replace("/[^0-9]/", "", $this->request->data['phone']);
             $message = $this->Messages->patchEntity($message, $this->request->data);
+            
             if ($this->Messages->save($message)) {
-                $this->Flash->success(__('The message has been saved.'));
-                return $this->redirect(['action' => 'index']);
+                $message = "Obrigado por sua mensagem, em breve também aparecerá em nosso site.";
             } else {
-                $this->Flash->error(__('The message could not be saved. Please, try again.'));
+                $message = 'Erro ao salvar mensagem, por favor entre em contato conosco. Matheus: 8837-5297 ou Hellyn 8872-0687.';
             }
         }
-        $this->set(compact('message'));
-        $this->set('_serialize', ['message']);
+        $this->autoRender = false;
+        echo $message;
     }
 
     /**

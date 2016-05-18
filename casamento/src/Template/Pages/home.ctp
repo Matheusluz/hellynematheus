@@ -22,6 +22,8 @@
 <?= $this->element('../Pages/history'); ?>
 <?= $this->element('../Pages/gallery'); ?>
 <?= $this->element('../Pages/ceremony'); ?>
+<?= $this->element('../Messages/add'); ?>
+<?= $this->element('../Pages/present'); ?>
 <?= $this->element('../Confirms/add'); ?>
 
 <script type="text/javascript">

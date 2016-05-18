@@ -3,7 +3,7 @@
         <?= $this->Html->image("icons/our-love-life.png", ["class" => "img-responsive pull-center"]) ?>
         <h2>Confirmar presença</h2>
     </div>
-    <div class="row bg-circles">
+    <div class="row">
         <div class="container">
             <?= $this->Form->create(null, ["id" => "confirm_form", "url" => ['controller' => 'Confirms', 'action' => 'add']]) ?>
             <?php
