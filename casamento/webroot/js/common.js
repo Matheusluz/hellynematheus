@@ -28,4 +28,7 @@ jQuery(document).ready(function() {
 			}
 		}
 	});
+	
+    // Inicia tooltip	
+	$('[data-toggle="tooltip"]').tooltip();
 });

@@ -18,7 +18,7 @@
             <div class="col-sm-5">
                 <div class="ih-item circle effect17 pull-right wow bounceInLeft" data-wow-delay="0.0s" data-wow-duration="0.9s">
                     <a href="#">
-                        <div class="img"><?= $this->Html->image("hellyn.jpg") ?></div>
+                        <div class="img"><?= $this->Html->image("hellyn2.jpg") ?></div>
                         <div class="info">
                           <h4>Eu sou Hellyn Cristina</h4>
                           <p>Nasci dia 07/03/1990 em Curitiba/PR, filha de Elisabete e José.</p>

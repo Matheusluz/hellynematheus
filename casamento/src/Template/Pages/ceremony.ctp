@@ -8,7 +8,7 @@
             <div class="col-sm-6">
                 <h4>Cerimônia</h4>
                 <p>Nossa cerimônia será realizada no dia 23/07/2016 às 17:00 horas na paróquia sagrada família.</p>
-                <p>Clique aqui para confirmar sua presença.</p>
+                <p><?= $this->Html->link('Clique aqui', '#confirm', ["class" => "page-scroll"]) ?> para confirmar sua presença.</p>
                 <p><i class="fa fa-map-marker"></i> R. João Stenzowski, 100 - Novo Mundo, Curitiba - PR.</p>
                 
             </div>

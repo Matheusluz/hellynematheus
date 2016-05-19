@@ -49,7 +49,7 @@
             </div>
             <div class="col-xs-12">
                 <?= $this->Form->button(__('Enviar'), ['class' => 'btn btn-success col-xs-3']) ?>
-                <div class="col-xs-8 col-xs-offset-1 hidden" id="box-confirm" onclick="this.classList.add('hidden')">
+                <div class="col-xs-8 col-xs-offset-1 hidden" id="box-message" onclick="this.classList.add('hidden')">
                     <div id="box-text" style="display: inline;"></div>
                     <button type="button" class="close" aria-label="Close" style="display: inline;"><span aria-hidden="true">&times;</span></button>
                 </div>
@@ -72,14 +72,14 @@
             data: $('#form_message').serialize(),
             success: function(data){
                 $('#form_message')[0].reset();
-                $('#box-confirm').removeClass('bg-danger hidden');
-                $('#box-confirm').addClass('bg-success');
-                $('#box-confirm #box-text').html(data);
+                $('#box-message').removeClass('bg-danger hidden');
+                $('#box-message').addClass('bg-success');
+                $('#box-message #box-text').html(data);
 			},
 			error: function(data){
-                $('#box-confirm').removeClass('bg-success hidden');
-                $('#box-confirm').addClass('bg-danger');
-                $('#box-confirm #box-text').html(data);  
+                $('#box-message').removeClass('bg-success hidden');
+                $('#box-message').addClass('bg-danger');
+                $('#box-message #box-text').html(data);  
 			}
         });
         
