@@ -1,0 +1,14 @@
+2016-05-19 13:52:57 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Webroot could not be found.
+Exception Attributes: array (
+  'class' => 'Webroot',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /casamento/webroot/css/
+Client IP: 10.240.0.187
+Stack Trace:
+#0 /home/ubuntu/workspace/casamento/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
