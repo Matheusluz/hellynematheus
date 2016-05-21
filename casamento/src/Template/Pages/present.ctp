@@ -26,14 +26,36 @@
                 </div>
                 <div class="img col-xs-4">
                     <?php
-                    echo $this->Html->link(
-                        $this->Html->image("lua_de_mel2.jpg", ['title' => 'Ajude os noivos a ter uma lua de mel', "data-toggle" => "tooltip", 'class' => ['img-responsive', 'img-thumbnail']]),
-                        '#',
-                        ['escapeTitle' => false, 'target' => '_blank']
-                    );
+                    echo $this->Html->image("lua_de_mel2.jpg", ['id' => 'honeyMonGifts', 'title' => 'Ajude os noivos a ter uma lua de mel', "data-toggle" => "tooltip", 'class' => ['img-responsive', 'img-thumbnail']]);
                     ?>
                 </div>
             </div>
         </div>
     </div>
 </section>
+<div class="modal fade" tabindex="-1" role="dialog" id="honeyMonModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Se preferir, faça um depósito para nossa poupança no banco do Brasil</h4>
+      </div>
+      <div class="modal-body">
+        <p>Nome: Matheus Pereira Luz</p>
+        <p>CPF: 056.760.549-30</p>
+        <p>Agência: 756-0</p>
+        <p>Conta corrente: 72344-4</p>
+        <p>Variação: 51</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<script type="text/javascript">
+    $("#honeyMonGifts").click(function(){
+       $('#honeyMonModal').modal(); 
+    });
+</script>

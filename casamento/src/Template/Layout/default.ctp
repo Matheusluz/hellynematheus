@@ -11,7 +11,7 @@
     </title>
     <?= $this->Html->meta('icon') ?>
 
-    <?= $this->Html->css(['bootstrap', 'animate', 'ihover', 'scrolling-nav', 'jquery.fancybox', 'theme']) ?>
+    <?= $this->Html->css(['bootstrap', 'animate', 'ihover', 'scrolling-nav']) ?>
     <?= $this->Html->css(['jquery.fancybox', 'jquery.fancybox-buttons', 'jquery.fancybox-thumbs']) ?>
     <?= $this->Html->css('theme') ?>
     <?= $this->Html->css('https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css') ?>
@@ -33,40 +33,39 @@
 </head>
 
 <body>
-    <div class="wrapper" id="wrapper">
-        <header>
-            <div class="menu">
-                <nav class="navbar navbar-default navbar-fixed-top">
-                    <div class="container-fluid">
-                        <div class="navbar-header">
-                            <?= $this->Html->link('Hellyn & Matheus', '/', ['class' => 'navbar-brand']) ?>
-                        </div>
-                        <div id="navbar" class="navbar-collapse collapse">
-                            <ul class="nav navbar-nav navbar-right">
-                                <li><?= $this->Html->link('Nossa história', '#history', ["class" => "page-scroll"]) ?></li>
-                                <li><?= $this->Html->link('Galeria', '#gallery', ["class" => "page-scroll"]) ?></li>
-                                <li><?= $this->Html->link('Cerimônia', '#ceremony', ["class" => "page-scroll"]) ?></li>
-                                <li><?= $this->Html->link('Mensagens', '#add_message', ["class" => "page-scroll"]) ?></li>
-                                <li><?= $this->Html->link('Lista de presentes', '#present', ["class" => "page-scroll"]) ?></li>
-                                <li><?= $this->Html->link('Confirmar presença', '#confirm', ["class" => "page-scroll"]) ?></li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-        </header>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <?= $this->Html->link('Hellyn & Matheus', '#', ['class' => 'navbar-brand nav-main']) ?>
+        </div>
+        
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><?= $this->Html->link('Nossa história', '#history', ["class" => "page-scroll"]) ?></li>
+            <li><?= $this->Html->link('Galeria', '#gallery', ["class" => "page-scroll"]) ?></li>
+            <li><?= $this->Html->link('Cerimônia', '#ceremony', ["class" => "page-scroll"]) ?></li>
+            <li><?= $this->Html->link('Mensagens', '#add_message', ["class" => "page-scroll"]) ?></li>
+            <li><?= $this->Html->link('Lista de presentes', '#present', ["class" => "page-scroll"]) ?></li>
+            <li><?= $this->Html->link('Confirmar presença', '#confirm', ["class" => "page-scroll"]) ?></li>
+          </ul>
+        </div>
+    </nav>
 
-        <?= $this->Flash->render() ?>
-        <?= $this->fetch('content') ?>
+    <?= $this->Flash->render() ?>
+    <?= $this->fetch('content') ?>
+    
+    <section class="footer" id="footer">
+	<p class="text-center">
+		<a href="#wrapper" class="gototop"><i class="fa fa-angle-double-up fa-2x"></i></a>
+	</p>
+	<div class="container clock"></div>
+	</section>
         
-        <section class="footer" id="footer">
-    	<p class="text-center">
-    		<a href="#wrapper" class="gototop"><i class="fa fa-angle-double-up fa-2x"></i></a>
-    	</p>
-    	<div class="container clock"></div>
-    	</section>
-        
-    </div>
     <script type="text/javascript">
         // Marca no menu, a página que esta aberta
         $('a[href="' + this.location.pathname + '"]').parent().addClass('active');
