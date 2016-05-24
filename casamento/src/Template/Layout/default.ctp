@@ -41,7 +41,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <?= $this->Html->link('Hellyn & Matheus', '#', ['class' => 'navbar-brand nav-main']) ?>
+          <?= $this->Html->link('Hellyn & Matheus', '#banner', ['class' => 'navbar-brand nav-main page-scroll']) ?>
         </div>
         
         <div id="navbar" class="navbar-collapse collapse">
@@ -61,7 +61,7 @@
     
     <section class="footer" id="footer">
 	<p class="text-center">
-		<a href="#wrapper" class="gototop"><i class="fa fa-angle-double-up fa-2x"></i></a>
+		<a href="#banner" class="gototop page-scroll"><i class="fa fa-angle-double-up fa-2x"></i></a>
 	</p>
 	<div class="container clock"></div>
 	</section>

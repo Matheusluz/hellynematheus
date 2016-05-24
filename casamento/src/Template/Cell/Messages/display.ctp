@@ -1,7 +1,7 @@
 <?php if(count($messages) > 0): ?>
     <section class="list_message" id="list_message">
         <div class="row">
-            <div class="container highlight pre-scrollable">
+            <div class="container highlight" id="box_message">
                 <?php foreach ($messages as $message): ?>
                     <blockquote>
                         <?= h($message->message) ?>" 

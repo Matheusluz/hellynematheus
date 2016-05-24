@@ -466,8 +466,10 @@ blockquote cite:after {
 }
 #list_message {
 	margin-top: 15px;
-	/*max-height: 300px;*/
-	/*overflow-y: scroll;*/
+}
+#box_message {
+    max-height: 400px;
+    overflow-y: auto;
 }
 
 /*--------------------------- Lista de presentes ----------------------------*/

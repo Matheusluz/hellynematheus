@@ -1,5 +1,5 @@
 <?php if(count($messages) > 0): ?>
-    <section class="add_message" id="add_message">
+    <section class="list_message" id="list_message">
         <div class="row">
             <div class="container">
                 <?php foreach ($messages as $message): ?>
