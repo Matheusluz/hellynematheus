@@ -104,4 +104,15 @@ class MessagesController extends AppController
         }
         return $this->redirect(['action' => 'index']);
     }
+    
+    public function confirm()
+    {
+        $confirmed = ($this->request->data['confirmed'] == 'true') ? 1 : 0;
+        $message = $this->Messages->get($this->request->data['id']);
+        $message['confirmed'] = $confirmed;
+        
+        $this->Messages->save($message);
+        
+        $this->autoRender = false;
+    }
 }
