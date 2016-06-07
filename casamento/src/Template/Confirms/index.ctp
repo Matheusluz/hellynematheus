@@ -1,32 +1,28 @@
 <div class="confirms index large-9 medium-8 columns content">
     <h3><?= __('Confirmações') ?></h3>
-    <table cellpadding="0" cellspacing="0">
-        <thead>
-            <tr>
-                <th><?= $this->Paginator->sort('confirm') ?></th>
-                <th><?= $this->Paginator->sort('name') ?></th>
-                <th><?= $this->Paginator->sort('quantidy') ?></th>
-                <th><?= $this->Paginator->sort('phone') ?></th>
-                <th><?= $this->Paginator->sort('email') ?></th>
-                <th class="actions"><?= __('Ações') ?></th>
-            </tr>
-        </thead>
-        <tbody>
-            <?php foreach ($confirms as $confirm): ?>
-            <tr>
-                <td><?= h($confirm->confirm) ?></td>
-                <td><?= h($confirm->name) ?></td>
-                <td><?= h($confirm->quantidy) ?></td>
-                <td><?= h($confirm->phone) ?></td>
-                <td><?= h($confirm->email) ?></td>
-                <td class="actions">
-                    <?= $this->Html->link(__('Edit'), ['action' => 'edit', $confirm->id]) ?>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-3 col-md-3"><h3><small>Nome</small></h3></div>
+            <div class="col-xs-2 col-md-2"><h3><small>Confirmado?</small></h3></div>
+            <div class="col-xs-1 col-md-1"><h3><small>Quantidade</small></h3></div>
+            <div class="col-xs-2 col-md-2"><h3><small>Telefone</small></h3></div>
+            <div class="col-xs-2 col-md-2"><h3><small>Email</small></h3></div>
+            <div class="col-xs-2 col-md-2"><h3><small>Ações</small></h3></div>
+        </div>
+        <?php foreach ($confirms as $confirm): ?>
+            <div class="row confirm">
+                <div class="col-xs-3 col-md-3"><?= h($confirm->name) ?></div>
+                <div class="col-xs-2 col-md-2"><?= h($confirm->confirm) ? "Sim" : "Não" ?></div>
+                <div class="col-xs-1 col-md-1"><?= h($confirm->quantidy) ?></div>
+                <div class="col-xs-2 col-md-2"><?= h($confirm->phone) ?></div>
+                <div class="col-xs-2 col-md-2"><?= h($confirm->email) ?></div>
+                <div class="col-xs-2 col-md-2">
+                    <?= $this->Html->link(__('Editar'), ['action' => 'edit', $confirm->id]) ?>
                     <?= $this->Form->postLink(__('Apagar'), ['action' => 'delete', $confirm->id], ['confirm' => __('Tem certeza que deseja apagar essa confirmação?')]) ?>
-                </td>
-            </tr>
-            <?php endforeach; ?>
-        </tbody>
-    </table>
+                </div>
+            </div>
+        <?php endforeach; ?>
+    </div>
     <div class="paginator">
         <ul class="pagination">
             <?= $this->Paginator->prev('< ' . __('voltar')) ?>

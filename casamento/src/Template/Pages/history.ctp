@@ -14,8 +14,10 @@
                 </p>
             </div>
         </div>
+    </div>
+    <div class="container">
         <div class="row">
-            <div class="col-sm-5">
+            <div class="col-xs-5">
                 <div class="ih-item circle effect17 pull-right wow bounceInLeft" data-wow-delay="0.0s" data-wow-duration="0.9s">
                     <a href="#">
                         <div class="img"><?= $this->Html->image("hellyn2.jpg") ?></div>
@@ -26,10 +28,10 @@
                     </a>
                 </div>
             </div>
-            <div class="col-sm-2">
+            <div class="col-xs-2">
                 <?= $this->Html->image("hearts-connector.png") ?>
             </div>
-            <div class="col-sm-5">
+            <div class="col-xs-5">
                 <div class="ih-item circle effect17 pull-left wow bounceInRight" data-wow-delay="0.0s" data-wow-duration="0.9s">
                     <a href="#">
                         <div class="img"><?= $this->Html->image("matheus.jpg") ?></div>
