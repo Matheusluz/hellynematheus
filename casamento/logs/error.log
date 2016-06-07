@@ -232,3 +232,185 @@ Stack Trace:
 #3 {main}
 
 
+2016-06-07 02:31:16 Error: Fatal Error (1): Call to a member function find() on a non-object in [/home/ubuntu/workspace/casamento/src/Controller/ConfirmsController.php, line 26]
+Request URL: /casamento/confirms
+Client IP: 10.240.0.75
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 215
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2016-06-07 02:31:16 Error: [Cake\Error\FatalErrorException] Call to a member function find() on a non-object
+Request URL: /casamento/confirms
+Client IP: 10.240.0.75
+Stack Trace:
+#0 /home/ubuntu/workspace/casamento/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', '/home/ubuntu/wo...', 26)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-06-07 02:31:41 Error: Fatal Error (1): Call to a member function find() on a non-object in [/home/ubuntu/workspace/casamento/src/Controller/ConfirmsController.php, line 26]
+Request URL: /casamento/confirms
+Client IP: 10.240.0.203
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 215
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2016-06-07 02:31:41 Error: [Cake\Error\FatalErrorException] Call to a member function find() on a non-object
+Request URL: /casamento/confirms
+Client IP: 10.240.0.203
+Stack Trace:
+#0 /home/ubuntu/workspace/casamento/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', '/home/ubuntu/wo...', 26)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-06-07 02:32:00 Error: Fatal Error (1): Call to a member function find() on a non-object in [/home/ubuntu/workspace/casamento/src/Controller/ConfirmsController.php, line 26]
+Request URL: /casamento/confirms
+Client IP: 10.240.0.186
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 215
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2016-06-07 02:32:00 Error: [Cake\Error\FatalErrorException] Call to a member function find() on a non-object
+Request URL: /casamento/confirms
+Client IP: 10.240.0.186
+Stack Trace:
+#0 /home/ubuntu/workspace/casamento/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', '/home/ubuntu/wo...', 26)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-06-07 02:32:23 Error: Fatal Error (1): Call to undefined method Cake\ORM\ResultSet::find() in [/home/ubuntu/workspace/casamento/src/Controller/ConfirmsController.php, line 26]
+Request URL: /casamento/confirms
+Client IP: 10.240.0.207
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 215
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2016-06-07 02:32:24 Error: [Cake\Error\FatalErrorException] Call to undefined method Cake\ORM\ResultSet::find()
+Request URL: /casamento/confirms
+Client IP: 10.240.0.207
+Stack Trace:
+#0 /home/ubuntu/workspace/casamento/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to undefin...', '/home/ubuntu/wo...', 26)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-06-07 02:32:35 Error: Fatal Error (1): Call to undefined method Cake\ORM\ResultSet::find() in [/home/ubuntu/workspace/casamento/src/Controller/ConfirmsController.php, line 26]
+Request URL: /casamento/confirms
+Client IP: 10.240.0.204
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 215
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2016-06-07 02:32:35 Error: [Cake\Error\FatalErrorException] Call to undefined method Cake\ORM\ResultSet::find()
+Request URL: /casamento/confirms
+Client IP: 10.240.0.204
+Stack Trace:
+#0 /home/ubuntu/workspace/casamento/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to undefin...', '/home/ubuntu/wo...', 26)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-06-07 02:51:21 Error: Fatal Error (1): Call to undefined method Cake\ORM\ResultSet::find() in [/home/ubuntu/workspace/casamento/src/Controller/ConfirmsController.php, line 26]
+Request URL: /casamento/confirms
+Client IP: 10.240.0.197
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 215
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2016-06-07 02:51:21 Error: [Cake\Error\FatalErrorException] Call to undefined method Cake\ORM\ResultSet::find()
+Request URL: /casamento/confirms
+Client IP: 10.240.0.197
+Stack Trace:
+#0 /home/ubuntu/workspace/casamento/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to undefin...', '/home/ubuntu/wo...', 26)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-06-07 02:53:46 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW) in [/home/ubuntu/workspace/casamento/src/Controller/ConfirmsController.php, line 26]
+Request URL: /casamento/confirms
+Client IP: 10.240.0.206
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 215
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2016-06-07 02:53:46 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+Request URL: /casamento/confirms
+Client IP: 10.240.0.206
+Stack Trace:
+#0 /home/ubuntu/workspace/casamento/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', '/home/ubuntu/wo...', 26)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-06-07 02:53:52 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW) in [/home/ubuntu/workspace/casamento/src/Controller/ConfirmsController.php, line 26]
+Request URL: /casamento/confirms
+Client IP: 10.240.0.208
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 215
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2016-06-07 02:53:52 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+Request URL: /casamento/confirms
+Client IP: 10.240.0.208
+Stack Trace:
+#0 /home/ubuntu/workspace/casamento/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', '/home/ubuntu/wo...', 26)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-06-07 02:55:23 Error: [BadMethodCallException] Unknown method "sum"
+Request URL: /casamento/confirms
+Client IP: 10.240.0.241
+Stack Trace:
+#0 /home/ubuntu/workspace/casamento/vendor/cakephp/cakephp/src/ORM/Query.php(1077): Cake\ORM\Query->_call('sum', Array)
+#1 /home/ubuntu/workspace/casamento/src/Controller/ConfirmsController.php(26): Cake\ORM\Query->__call('sum', Array)
+#2 /home/ubuntu/workspace/casamento/src/Controller/ConfirmsController.php(26): Cake\ORM\Query->sum('quantidy')
+#3 [internal function]: App\Controller\ConfirmsController->index()
+#4 /home/ubuntu/workspace/casamento/vendor/cakephp/cakephp/src/Controller/Controller.php(429): call_user_func_array(Array, Array)
+#5 /home/ubuntu/workspace/casamento/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#6 /home/ubuntu/workspace/casamento/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ConfirmsController))
+#7 /home/ubuntu/workspace/casamento/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#8 {main}
+
+
+2016-06-07 02:57:54 Error: [BadMethodCallException] Unknown method "sum"
+Request URL: /casamento/confirms
+Client IP: 10.240.0.197
+Stack Trace:
+#0 /home/ubuntu/workspace/casamento/vendor/cakephp/cakephp/src/ORM/Query.php(1077): Cake\ORM\Query->_call('sum', Array)
+#1 /home/ubuntu/workspace/casamento/src/Controller/ConfirmsController.php(26): Cake\ORM\Query->__call('sum', Array)
+#2 /home/ubuntu/workspace/casamento/src/Controller/ConfirmsController.php(26): Cake\ORM\Query->sum('*')
+#3 [internal function]: App\Controller\ConfirmsController->index()
+#4 /home/ubuntu/workspace/casamento/vendor/cakephp/cakephp/src/Controller/Controller.php(429): call_user_func_array(Array, Array)
+#5 /home/ubuntu/workspace/casamento/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#6 /home/ubuntu/workspace/casamento/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ConfirmsController))
+#7 /home/ubuntu/workspace/casamento/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#8 {main}
+
+

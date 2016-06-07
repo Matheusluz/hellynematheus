@@ -411,3 +411,42 @@ Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
 
 
 
+2016-06-07 02:31:16 Notice: Notice (8): Undefined variable: confirms in [/home/ubuntu/workspace/casamento/src/Controller/ConfirmsController.php, line 26]
+Request URL: /casamento/confirms
+Client IP: 10.240.0.75
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+App\Controller\ConfirmsController::index() - APP/Controller/ConfirmsController.php, line 26
+Cake\Controller\Controller::invokeAction() - CORE/src/Controller/Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2016-06-07 02:31:41 Notice: Notice (8): Undefined variable: confirms in [/home/ubuntu/workspace/casamento/src/Controller/ConfirmsController.php, line 26]
+Request URL: /casamento/confirms
+Client IP: 10.240.0.203
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+App\Controller\ConfirmsController::index() - APP/Controller/ConfirmsController.php, line 26
+Cake\Controller\Controller::invokeAction() - CORE/src/Controller/Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2016-06-07 02:32:00 Notice: Notice (8): Undefined variable: confirms in [/home/ubuntu/workspace/casamento/src/Controller/ConfirmsController.php, line 26]
+Request URL: /casamento/confirms
+Client IP: 10.240.0.186
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+App\Controller\ConfirmsController::index() - APP/Controller/ConfirmsController.php, line 26
+Cake\Controller\Controller::invokeAction() - CORE/src/Controller/Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+

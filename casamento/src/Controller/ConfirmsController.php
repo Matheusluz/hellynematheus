@@ -22,6 +22,12 @@ class ConfirmsController extends AppController
 
         $this->set(compact('confirms'));
         $this->set('_serialize', ['confirms']);
+        
+        $sum_confirmed = $this->Confirms->find()->where(['confirm' => true])->sumOf('quantidy');
+        $this->set('sum_confirmed', $sum_confirmed);
+
+        $sum_not_confirmed = $this->Confirms->find()->where(['confirm' => false])->sumOf('quantidy');
+        $this->set('sum_not_confirmed', $sum_not_confirmed);
     }
 
     /**
