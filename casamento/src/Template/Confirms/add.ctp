@@ -67,8 +67,8 @@
                 ?>
             </div>
             <div class="col-xs-12">
-                <?= $this->Form->button(__('Confirmar presença'), ['id' => 'confirm', 'class' => 'btn btn-success col-xs-4 col-md-offset-1']) ?>
-                <?= $this->Form->button(__('Não poderei ir'), ['id' => 'ausent', 'class' => 'btn btn-danger col-xs-4 col-md-offset-2']) ?>
+                <?= $this->Form->button(__('Confirmar presença'), ['id' => 'confirm', 'class' => 'btn btn-success col-xs-5 col-sm-4 col-sm-offset-1']) ?>
+                <?= $this->Form->button(__('Não poderei ir'), ['id' => 'ausent', 'class' => 'btn btn-danger col-xs-5 col-xs-offset-2 col-sm-4 col-sm-offset-2']) ?>
             </div>
             <div class="col-xs-12 hidden" id="box-confirm" onclick="this.classList.add('hidden')">
                 <div id="box-text" style="display: inline;"></div>

@@ -17,8 +17,8 @@
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-xs-5">
-                <div class="ih-item circle effect17 pull-right wow bounceInLeft" data-wow-delay="0.0s" data-wow-duration="0.9s">
+            <div class="col-xs-12 col-sm-5">
+                <div class="ih-item circle effect17 wow bounceInLeft" data-wow-delay="0.0s" data-wow-duration="0.9s" style="margin:auto;">
                     <a href="#">
                         <div class="img"><?= $this->Html->image("hellyn2.jpg") ?></div>
                         <div class="info">
@@ -28,11 +28,11 @@
                     </a>
                 </div>
             </div>
-            <div class="col-xs-2">
+            <div class="col-xs-12 col-sm-2" style="text-align:center;">
                 <?= $this->Html->image("hearts-connector.png") ?>
             </div>
-            <div class="col-xs-5">
-                <div class="ih-item circle effect17 pull-left wow bounceInRight" data-wow-delay="0.0s" data-wow-duration="0.9s">
+            <div class="col-xs-12 col-sm-5">
+                <div class="ih-item circle effect17 wow bounceInRight" data-wow-delay="0.0s" data-wow-duration="0.9s" style="margin:auto;">
                     <a href="#">
                         <div class="img"><?= $this->Html->image("matheus.jpg") ?></div>
                         <div class="info">
