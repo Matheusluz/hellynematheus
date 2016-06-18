@@ -18,7 +18,8 @@ class ConfirmsController extends AppController
      */
     public function index()
     {
-        $confirms = $this->paginate($this->Confirms);
+        // $confirms = $this->paginate($this->Confirms);
+        $confirms = $this->Confirms->find();
 
         $this->set(compact('confirms'));
         $this->set('_serialize', ['confirms']);
@@ -57,7 +58,6 @@ class ConfirmsController extends AppController
         $confirm = $this->Confirms->newEntity();
         if ($this->request->is('post')) {
             
-            $this->request->data['phone'] = preg_replace("/[^0-9]/", "", $this->request->data['phone']);
             $confirm = $this->Confirms->patchEntity($confirm, $this->request->data);
 
             if ($this->Confirms->save($confirm)) {

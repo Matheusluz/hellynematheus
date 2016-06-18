@@ -50,7 +50,7 @@ class ConfirmsTable extends Table
             ->notEmpty('name');
 
         $validator
-            // ->integer('phone')
+            ->integer('phone')
             ->allowEmpty('phone');
 
         $validator
@@ -66,6 +66,10 @@ class ConfirmsTable extends Table
             ->notEmpty('quantidy');
 
         return $validator;
+    }
+    
+    public function beforeSave($event, $entity, $options) {
+        pr($entity);
     }
 
     public function afterSave($event, $entity, $options) {

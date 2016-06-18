@@ -414,3 +414,47 @@ Stack Trace:
 #8 {main}
 
 
+2016-06-18 02:08:06 Warning: Warning (4096): Argument 1 passed to App\Model\Table\ConfirmsTable::beforeSave() must be an instance of App\Model\Table\Event, instance of Cake\Event\Event given, called in /home/ubuntu/workspace/casamento/vendor/cakephp/cakephp/src/Event/EventManager.php on line 390 and defined in [/home/ubuntu/workspace/casamento/src/Model/Table/ConfirmsTable.php, line 71]
+Request URL: /casamento/confirms/add
+Referer URL: https://hellynematheus-matheuspluz.c9users.io/casamento/
+Client IP: 10.240.0.208
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+App\Model\Table\ConfirmsTable::beforeSave() - APP/Model/Table/ConfirmsTable.php, line 71
+Cake\Event\EventManager::_callListener() - CORE/src/Event/EventManager.php, line 390
+Cake\Event\EventManager::dispatch() - CORE/src/Event/EventManager.php, line 356
+Cake\ORM\Table::dispatchEvent() - CORE/src/Event/EventDispatcherTrait.php, line 78
+Cake\ORM\Table::_processSave() - CORE/src/ORM/Table.php, line 1439
+Cake\ORM\Table::Cake\ORM\{closure}() - CORE/src/ORM/Table.php, line 1391
+Cake\Database\Connection::transactional() - CORE/src/Database/Connection.php, line 557
+Cake\ORM\Table::save() - CORE/src/ORM/Table.php, line 1392
+App\Controller\ConfirmsController::add() - APP/Controller/ConfirmsController.php, line 64
+Cake\Controller\Controller::invokeAction() - CORE/src/Controller/Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2016-06-18 02:08:06 Warning: Warning (4096): Argument 2 passed to App\Model\Table\ConfirmsTable::beforeSave() must be an instance of App\Model\Table\Entity, instance of App\Model\Entity\Confirm given, called in /home/ubuntu/workspace/casamento/vendor/cakephp/cakephp/src/Event/EventManager.php on line 390 and defined in [/home/ubuntu/workspace/casamento/src/Model/Table/ConfirmsTable.php, line 71]
+Request URL: /casamento/confirms/add
+Referer URL: https://hellynematheus-matheuspluz.c9users.io/casamento/
+Client IP: 10.240.0.208
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+App\Model\Table\ConfirmsTable::beforeSave() - APP/Model/Table/ConfirmsTable.php, line 71
+Cake\Event\EventManager::_callListener() - CORE/src/Event/EventManager.php, line 390
+Cake\Event\EventManager::dispatch() - CORE/src/Event/EventManager.php, line 356
+Cake\ORM\Table::dispatchEvent() - CORE/src/Event/EventDispatcherTrait.php, line 78
+Cake\ORM\Table::_processSave() - CORE/src/ORM/Table.php, line 1439
+Cake\ORM\Table::Cake\ORM\{closure}() - CORE/src/ORM/Table.php, line 1391
+Cake\Database\Connection::transactional() - CORE/src/Database/Connection.php, line 557
+Cake\ORM\Table::save() - CORE/src/ORM/Table.php, line 1392
+App\Controller\ConfirmsController::add() - APP/Controller/ConfirmsController.php, line 64
+Cake\Controller\Controller::invokeAction() - CORE/src/Controller/Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+

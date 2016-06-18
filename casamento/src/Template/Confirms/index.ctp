@@ -1,9 +1,9 @@
 <div class="confirms index large-9 medium-8 columns content">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-xs-2 col-md-2"><h3><small><?= __('Confirmações') ?></small></h3></div>
-            <div class="col-xs-2 col-md-2" style="color:green;"><?= $sum_confirmed ?> Confirmados</div>
-            <div class="col-xs-2 col-md-2" style="color:red;"><?= $sum_not_confirmed ?> Ausências</div>
+            <div class="col-xs-12 col-md-2"><h3><small><?= __('Confirmações') ?></small></h3></div>
+            <div class="col-xs-6 col-md-2" style="color:green;"><?= $sum_confirmed ?> Confirmados</div>
+            <div class="col-xs-6 col-md-2" style="color:red;"><?= $sum_not_confirmed ?> Ausências</div>
         </div>
         <div class="row">
             <div class="col-xs-3 col-md-3"><h3><small>Nome</small></h3></div>
@@ -26,13 +26,5 @@
                 </div>
             </div>
         <?php endforeach; ?>
-    </div>
-    <div class="paginator">
-        <ul class="pagination">
-            <?= $this->Paginator->prev('< ' . __('voltar')) ?>
-            <?= $this->Paginator->numbers() ?>
-            <?= $this->Paginator->next(__('próximo') . ' >') ?>
-        </ul>
-        <p><?= $this->Paginator->counter() ?></p>
     </div>
 </div>
